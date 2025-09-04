@@ -1,0 +1,17 @@
+{
+    "name": "FishSystems",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b112ba2acea66d64ea1da6269e6b952a",
+        "GUID:85e0054f8e64b47309646d35f8851f81"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
