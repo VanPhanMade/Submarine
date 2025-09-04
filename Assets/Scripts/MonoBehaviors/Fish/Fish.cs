@@ -26,7 +26,7 @@ namespace Monobehaviors.Fish
         #region MONOBEHAVIOR
         public override void Initialize()
         {
-            if (FishManager.Instance == null) new FishManager(0);
+            if (FishManager.Instance == null) new FishManager(1);
         }
         private void Start()
         {
