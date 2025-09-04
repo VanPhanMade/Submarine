@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > Goal is to demonstrate the following concepts in Unity in this order:
-> - Unity-specific: HDRP, Burst Compiler, DOTS
+> - Unity-specific: HDRP, Burst Compiler, DOTS, Advanced Input System
 > - C#: LINQ, .NET, Multi-Threading
 > - CI/CD Testing
 
