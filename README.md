@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > Goal is to demonstrate the following concepts in Unity in this order:
-> - Unity-specific: HDRP, Burst Compiler, DOTS, Advanced Input System
+> - Unity-specific: URP, Burst Compiler, DOTS, Advanced Input System
 > - C#: LINQ, .NET, Multi-Threading
 > - CI/CD Testing
 
@@ -15,7 +15,7 @@ A submarine simulator
 ### Key Features
 - You’re in a submarine  
 - Built with **Unity 6000.0.53f1**  
-- Demonstrates modern Unity tech stack (HDRP, Burst, DOTS, etc.)  
+- Demonstrates modern Unity tech stack (URP, Burst, DOTS, etc.)  
 
 > [!IMPORTANT]
 > Project is open sourced using Unity version: **6000.0.53f1**  
