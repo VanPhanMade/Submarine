@@ -2,6 +2,8 @@
 © 2025 Van Phan. All Rights Reserved.
 Fish object to demonstrate optimizations for large masses of objects
 and integration with ML-Agents.
+
+youtube.com/watch?v=32wtJZ3yRfw&list=PLX2vGYjWbI0R08eWQkO7nQkGiicHAX7IX&index=1&pp=iAQB
 */
 
 using UnityEngine;
@@ -66,11 +68,19 @@ namespace Monobehaviors.Fish
                 actions.ContinuousActions[1],
                 actions.ContinuousActions[2]);
 
+            // Update velocity with steering force
             velocity += steer * data.maxSteerForce * Time.deltaTime;
             velocity = Vector3.ClampMagnitude(velocity, data.maxSpeed);
 
-            transform.position += velocity * Time.deltaTime;
-            transform.forward = velocity.normalized;
+            // Smoothly rotate toward velocity direction
+            if (velocity.sqrMagnitude > 0.001f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, data.rotationSpeed * Time.deltaTime);
+            }
+
+            // Always move forward in local space
+            transform.position += transform.forward * velocity.magnitude * Time.deltaTime;
         }
 
         /// <summary>
