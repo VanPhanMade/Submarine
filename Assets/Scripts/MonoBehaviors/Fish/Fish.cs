@@ -3,7 +3,8 @@
 Fish object to demonstrate optimizations for large masses of objects
 and integration with ML-Agents.
 
-youtube.com/watch?v=32wtJZ3yRfw&list=PLX2vGYjWbI0R08eWQkO7nQkGiicHAX7IX&index=1&pp=iAQB
+Architecture: https://youtube.com/watch?v=32wtJZ3yRfw&list=PLX2vGYjWbI0R08eWQkO7nQkGiicHAX7IX&index=1&pp=iAQB
+Documentation: https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Installation.html
 */
 
 using UnityEngine;
@@ -36,7 +37,7 @@ namespace Monobehaviors.Fish
         }
         #endregion
 
-        #region AGENT_METHODS
+        #region AGENT
         /// <summary>
         /// Called at the beginning of a training episode.
         /// Resets position and velocity.
