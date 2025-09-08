@@ -2,6 +2,8 @@ conda activate mlagents-env
 
 pip install mlagents
 
+cd into project location ->
+
 ( Different IDs for different file outputs )
 mlagents-learn config/fish_config.yaml --run-id=fish-01
 
