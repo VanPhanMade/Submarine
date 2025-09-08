@@ -105,6 +105,12 @@ namespace Monobehaviors.Fish
         /// <param name="actions">Action buffer from the model or heuristic.</param>
         public override void OnActionReceived(ActionBuffers actions)
         {
+            if (!FishBounds.IsInside(transform.position))
+            {
+                AddReward(-1.0f);   // harsh penalty
+                EndEpisode();       // reset agent
+            }
+
             Vector3 steer = new Vector3(
             actions.ContinuousActions[0],
             actions.ContinuousActions[1],

@@ -2,22 +2,22 @@
     "FishLearning": {
         "checkpoints": [
             {
-                "steps": 4864,
-                "file_path": "results\\fish-01\\FishLearning\\FishLearning-4864.onnx",
-                "reward": null,
-                "creation_time": 1757291581.5651715,
+                "steps": 23954,
+                "file_path": "results\\fish-01\\FishLearning\\FishLearning-23954.onnx",
+                "reward": -10.866562306880951,
+                "creation_time": 1757341930.6400917,
                 "auxillary_file_paths": [
-                    "results\\fish-01\\FishLearning\\FishLearning-4864.pt"
+                    "results\\fish-01\\FishLearning\\FishLearning-23954.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 4864,
+            "steps": 23954,
             "file_path": "results\\fish-01\\FishLearning.onnx",
-            "reward": null,
-            "creation_time": 1757291581.5651715,
+            "reward": -10.866562306880951,
+            "creation_time": 1757341930.6400917,
             "auxillary_file_paths": [
-                "results\\fish-01\\FishLearning\\FishLearning-4864.pt"
+                "results\\fish-01\\FishLearning\\FishLearning-23954.pt"
             ]
         }
     },
