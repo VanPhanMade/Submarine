@@ -1,6 +1,7 @@
 conda activate mlagents-env
 
 pip install mlagents
+(optional) pip install tensorflow
 
 cd into project location ->
 
@@ -12,3 +13,6 @@ mlagents-learn config/fish_config.yaml --run-id=fish-01 --resume
 
 ( Rewrite )
 mlagents-learn config/fish_config.yaml --run-id=fish-01 --force
+
+After running if we want data visualized
+tensorboard --logdir=results/fish-01 ( fish-01 changes with id of runs above)
