@@ -13,11 +13,15 @@ jobs:
       - name: Debug
         run: echo "✅ Script compile job started"
 
-      - name: Unity Script Compile Check (editmode, license-free)
-        uses: game-ci/unity-test-runner@v4
+      - name: Unity Compile Check (dry run)
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ""   # license-free compile check
         with:
           projectPath: .
-          testMode: editmode
+          targetPlatform: StandaloneLinux64
+          buildMethod: ""     # no build method = just check compilation
+
   # --------------------------------------------------------------------
   # build-compile:
   #   runs-on: ubuntu-latest
