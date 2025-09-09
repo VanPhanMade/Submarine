@@ -6,32 +6,43 @@ on:
 jobs:
   script-compile:
     runs-on: ubuntu-latest
-    env:
-      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Debug
-        run: echo "Script compile job running fine ✅"
+        run: echo "✅ Script compile job started"
 
       - name: Unity Script Compile Check
-        uses: game-ci/unity-test-runner@v4
-        with:
-          projectPath: .
-          testMode: playmode
+        run: |
+          xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
+            unity-editor \
+            -batchmode \
+            -nographics \
+            -quit \
+            -projectPath . \
+            -logFile -
 
-  build-compile:
-    runs-on: ubuntu-latest
-    needs: script-compile
-    env:
-      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Unity Build Check
-        uses: game-ci/unity-builder@v4
-        with:
-          targetPlatform: StandaloneLinux64
-          buildMethod: ""
+  # --------------------------------------------------------------------
+  # build-compile:
+  #   runs-on: ubuntu-latest
+  #   needs: script-compile
+  #   env:
+  #     UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  #     UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  #     UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Unity Build Check
+  #       uses: game-ci/unity-builder@v4
+  #       with:
+  #         targetPlatform: StandaloneLinux64
+  #         buildMethod: ""
+  #
+  # NOTE:
+  # This requires a valid Unity license (Pro/Enterprise or properly
+  # activated Personal license with UNITY_LICENSE secret). Uncomment
+  # once you are ready to run full builds in CI.
+  # --------------------------------------------------------------------
