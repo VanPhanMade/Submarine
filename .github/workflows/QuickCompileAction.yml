@@ -13,16 +13,32 @@ jobs:
       - name: Debug
         run: echo "✅ Script compile job started"
 
-      - name: Unity Script Compile Check
-        run: |
-          xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-            unity-editor \
-            -batchmode \
-            -nographics \
-            -quit \
-            -projectPath . \
-            -logFile -
+      - name: Unity Script Compile Check (editmode, license-free)
+        id: unity
+        uses: game-ci/unity-test-runner@v4
+        continue-on-error: true   # 👈 don't fail immediately
+        with:
+          projectPath: .
+          testMode: editmode
 
+      # Save Unity logs as an artifact
+      - name: Upload Unity Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unity-Logs
+          path: artifacts
+
+      # Summarize compile results at the very end
+      - name: Summarize Compile Results
+        if: always()
+        run: |
+          if [ "${{ steps.unity.outcome }}" != "success" ]; then
+            echo "❌ Unity compile errors were detected. Check the Unity-Logs artifact."
+            exit 1
+          else
+            echo "✅ Unity compiled successfully."
+          fi
   # --------------------------------------------------------------------
   # build-compile:
   #   runs-on: ubuntu-latest
