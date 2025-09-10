@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E82930D2-64A8-434C-ACDB-0B6E3CF9A3FB}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{E82930D2-64A8-434C-ACDB-0B6E3CF9A3FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SFX" ID="{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}">
+					<ObjectInclusionList>
+						<ObjectRef Name="NumButtonEvent" ID="{D0CF1B0B-4381-40E2-9F41-C8E176DDFDD6}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NumButtonSuccess" ID="{7D6375B1-DAEB-47C4-8B2D-08DA40680F83}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NumButtonFailEvent" ID="{E3606E67-16DC-482E-B250-2CC9BA619B89}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

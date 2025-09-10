@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	601285521	NumButtonEvent			\Default Work Unit\NumButtonEvent	
+	2655784316	NumButtonSuccessEvent			\Default Work Unit\NumButtonSuccessEvent	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	146164747	NumButtonSuccess	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\27\{277C9F67-8041-8583-1A32-C08D69906500}.wem		\Actor-Mixer Hierarchy\Default Work Unit\NumButtonSuccess		88296
+	683710039	NumButton	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\53\{5318315D-6211-85FD-D6D5-C647E9F82072}.wem		\Actor-Mixer Hierarchy\Default Work Unit\NumButton		352896
+

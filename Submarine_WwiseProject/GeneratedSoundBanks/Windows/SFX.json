@@ -1,0 +1,91 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "393239870",
+    "Type": "User",
+    "GUID": "{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}",
+    "Language": "SFX",
+    "Hash": "{A7DC4D84-F66F-5D38-42C5-D2C5ED5C7B8B}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
+    "ShortName": "SFX",
+    "Path": "SFX.bnk",
+    "Media": [
+     {
+      "Id": "146164747",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonSuccess.wav",
+      "CachePath": "27/{277C9F67-8041-8583-1A32-C08D69906500}.wem"
+     },
+     {
+      "Id": "343449606",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonFail.wav",
+      "CachePath": "64/{6403A897-34A7-1FCA-B190-37F882DA8647}.wem"
+     },
+     {
+      "Id": "683710039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonPress.wav",
+      "CachePath": "53/{5318315D-6211-85FD-D6D5-C647E9F82072}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "601285521",
+      "Name": "NumButtonEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonEvent",
+      "GUID": "{D0CF1B0B-4381-40E2-9F41-C8E176DDFDD6}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "683710039"
+       }
+      ]
+     },
+     {
+      "Id": "3428046505",
+      "Name": "NumButtonFailEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonFailEvent",
+      "GUID": "{E3606E67-16DC-482E-B250-2CC9BA619B89}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "343449606"
+       }
+      ]
+     },
+     {
+      "Id": "2655784316",
+      "Name": "NumButtonSuccessEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonSuccessEvent",
+      "GUID": "{EFC8F6A8-F4E2-4086-AC57-8FE35414E65E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "146164747"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2C817563-84FF-999A-DE6B-ECA9C1D90CDD}"
+ }
+}

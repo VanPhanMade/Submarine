@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="NumButton" ID="{F25A0D97-DF05-4302-8B62-2BDBAF581ABA}" ShortID="270405246">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ButtonPress" ID="{2BEFEA47-D52F-45A5-9B46-BE0BFF7106E5}">
+							<Language>SFX</Language>
+							<AudioFile>ButtonPress.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="683710039"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ButtonPress" ID="{2BEFEA47-D52F-45A5-9B46-BE0BFF7106E5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="NumButtonSuccess" ID="{7D6375B1-DAEB-47C4-8B2D-08DA40680F83}" ShortID="888219407">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ButtonSuccess" ID="{F91C2155-D408-41E6-A9F1-D3ED76A4DE4D}">
+							<Language>SFX</Language>
+							<AudioFile>ButtonSuccess.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="146164747"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ButtonSuccess" ID="{F91C2155-D408-41E6-A9F1-D3ED76A4DE4D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="NumButtonFail" ID="{F4310E1B-9C67-4025-B5D2-D5A548DFB286}" ShortID="555395396">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ButtonFail" ID="{731CE9C3-B88D-45C4-8256-CD63E63D7D82}">
+							<Language>SFX</Language>
+							<AudioFile>ButtonFail.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="343449606"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ButtonFail" ID="{731CE9C3-B88D-45C4-8256-CD63E63D7D82}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HullThud" ID="{4AA113FB-55E6-4492-92CB-5E1593D380DA}" ShortID="872891321">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

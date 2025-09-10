@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "393239870",
+    "Type": "User",
+    "GUID": "{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}",
+    "Language": "SFX",
+    "Hash": "{9DB609C6-53A4-A074-3C52-6B3F53714344}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
+    "ShortName": "SFX",
+    "Path": "SFX.bnk",
+    "Media": [
+     {
+      "Id": "146164747",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonSuccess.wav",
+      "CachePath": "27/{277C9F67-8041-8583-1A32-C08D69906500}.wem"
+     },
+     {
+      "Id": "683710039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonPress.wav",
+      "CachePath": "53/{5318315D-6211-85FD-D6D5-C647E9F82072}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "601285521",
+      "Name": "NumButtonEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonEvent",
+      "GUID": "{D0CF1B0B-4381-40E2-9F41-C8E176DDFDD6}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "683710039"
+       }
+      ]
+     },
+     {
+      "Id": "2655784316",
+      "Name": "NumButtonSuccessEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonSuccessEvent",
+      "GUID": "{EFC8F6A8-F4E2-4086-AC57-8FE35414E65E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "146164747"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{339E62B4-E6A5-4CFE-715A-06750091CE8D}"
+ }
+}

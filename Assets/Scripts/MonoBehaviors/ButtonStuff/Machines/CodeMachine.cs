@@ -4,6 +4,10 @@ using UnityEngine.Events;
 
 public class CodeMachine : Machine
 {
+    // Wwise Fields
+    [SerializeField] private AK.Wwise.Event SuccessEvent;
+    [SerializeField] private AK.Wwise.Event FailEvent;
+
     string passcode;
     string statusText;
     [SerializeField] TextMeshProUGUI statusTextMesh;
@@ -18,13 +22,17 @@ public class CodeMachine : Machine
     {
         Debug.Log(passcode);
         if (passcode != this.passcode)
+        {
+            FailEvent.Post(gameObject);
             return;
+        }
         else
             TriggerSafe();
     }
     protected override void TriggerSafe()
     {
         base.TriggerSafe();
+        SuccessEvent.Post(gameObject);
         statusText = "System OK";
         passcode = string.Empty;
         UpdateText();

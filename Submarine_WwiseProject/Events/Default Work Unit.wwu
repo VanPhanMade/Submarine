@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="NumButtonEvent" ID="{D0CF1B0B-4381-40E2-9F41-C8E176DDFDD6}">
+					<ChildrenList>
+						<Action Name="" ID="{17208AF9-D9F0-4201-8A73-DD0967CE84F8}" ShortID="833172165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NumButton" ID="{F25A0D97-DF05-4302-8B62-2BDBAF581ABA}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NumButtonSuccessEvent" ID="{EFC8F6A8-F4E2-4086-AC57-8FE35414E65E}">
+					<ChildrenList>
+						<Action Name="" ID="{AB97617A-8091-478E-9A6A-51357EFA84E9}" ShortID="889623772">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NumButtonSuccess" ID="{7D6375B1-DAEB-47C4-8B2D-08DA40680F83}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NumButtonFailEvent" ID="{E3606E67-16DC-482E-B250-2CC9BA619B89}">
+					<ChildrenList>
+						<Action Name="" ID="{A43F9B9E-A729-4EDF-AAF2-8BC76DD53435}" ShortID="479006605">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NumButtonFail" ID="{F4310E1B-9C67-4025-B5D2-D5A548DFB286}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
