@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}",
     "Language": "SFX",
-    "Hash": "{9DB609C6-53A4-A074-3C52-6B3F53714344}",
+    "Hash": "{A7DC4D84-F66F-5D38-42C5-D2C5ED5C7B8B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
     "ShortName": "SFX",
     "Path": "SFX.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "ButtonSuccess.wav",
       "CachePath": "27/{277C9F67-8041-8583-1A32-C08D69906500}.wem"
+     },
+     {
+      "Id": "343449606",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonFail.wav",
+      "CachePath": "64/{6403A897-34A7-1FCA-B190-37F882DA8647}.wem"
      },
      {
       "Id": "683710039",
@@ -48,6 +56,20 @@
       ]
      },
      {
+      "Id": "3428046505",
+      "Name": "NumButtonFailEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\NumButtonFailEvent",
+      "GUID": "{E3606E67-16DC-482E-B250-2CC9BA619B89}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "343449606"
+       }
+      ]
+     },
+     {
       "Id": "2655784316",
       "Name": "NumButtonSuccessEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\NumButtonSuccessEvent",
@@ -64,6 +86,6 @@
     ]
    }
   ],
-  "FileHash": "{339E62B4-E6A5-4CFE-715A-06750091CE8D}"
+  "FileHash": "{A4CC2231-2018-6CC7-D1E4-533E598D0BDE}"
  }
 }

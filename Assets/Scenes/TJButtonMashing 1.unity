@@ -2824,7 +2824,7 @@ MonoBehaviour:
   FailEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7f978eb3343800940b06cd82f3e3ae99, type: 2}
+    WwiseObjectReference: {fileID: 0}
   statusTextMesh: {fileID: 538386304}
   passcodeTextMesh: {fileID: 292219636}
 --- !u!1 &204019574
