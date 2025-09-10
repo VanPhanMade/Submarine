@@ -9,6 +9,29 @@
 							<ObjectRef Name="System" ID="{20C940A7-6E5D-419D-9C66-658DA0121EA9}" WorkUnitID="{FE1FD8D5-56E2-4928-A1BA-2D1B1A24458B}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="AUX" ID="{C189CA82-1454-4861-94A7-778031C77F08}">
+							<ChildrenList>
+								<AuxBus Name="Reverb" ID="{D3A33D9D-1CAA-4B13-ADF0-07EDC2CB6C7E}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{19EA51DD-CC57-4DB7-B7FE-F67E7E9EDAEF}" ShortID="156491951">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

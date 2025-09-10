@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E88107F7-2CE1-4FC6-BAF3-B30233F13CD8}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="SFX" ID="{E88107F7-2CE1-4FC6-BAF3-B30233F13CD8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="GasButtonClick" ID="{89F09B75-334C-4831-A237-C4BA51B63DC7}">
+					<ChildrenList>
+						<Action Name="" ID="{452F24A4-3040-4EB8-8737-90D42E0D77A6}" ShortID="535027181">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GasButton_SFX" ID="{3914055C-264E-41C3-9692-837D477C5B43}" WorkUnitID="{1A751424-1931-4ADB-ACAC-5E103431879E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NumButtonPress" ID="{6A9A0556-17B4-4512-BC11-83FDCC9D47D6}">
+					<ChildrenList>
+						<Action Name="" ID="{B934FFBA-5FA0-4A65-8073-D0EACC2FFE6F}" ShortID="338462043">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NumberButtonPress_SFX" ID="{92B6F307-BB5F-4C45-975F-5A48641571F9}" WorkUnitID="{1A751424-1931-4ADB-ACAC-5E103431879E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NumButtonSuccess" ID="{5C90CC4E-1AA1-4F8C-8A63-A18BB10BB5A1}">
+					<ChildrenList>
+						<Action Name="" ID="{BD7BA5E3-14DB-428A-AB83-89BE219B2E0C}" ShortID="920804263">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NumberButtonSuccess_SFX" ID="{A7A3DBFE-165F-4F92-A238-6245DF850F72}" WorkUnitID="{1A751424-1931-4ADB-ACAC-5E103431879E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

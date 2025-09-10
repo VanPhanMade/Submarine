@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "Submarine_WwiseProject",
+   "GUID": "{7854DE82-09A2-4A6C-A310-3B7CE2383DAC}",
+   "Generator": "2024.1.7.8863"
+  },
+  "CacheRoot": "../../../../Submarine_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{E068DDFA-8B15-4A62-85E4-336C20147473}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../Submarine_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{F4C5C89D-7DCC-46E0-8383-ED964279776D}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../Submarine_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{8D9679DD-0D65-4765-8ABD-AE3BA727F2A4}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{F08AD734-68A7-4F8B-B9F1-57D7231889C6}"
+ }
+}

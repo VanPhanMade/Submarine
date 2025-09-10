@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1594486876	GasButtonClick			\SFX\GasButtonClick	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	707887850	GasButton_SFX	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\BB\{BBFD153E-AAA2-62DC-4B8A-FE00571A2A61}.wem		\Actor-Mixer Hierarchy\GameplaySFX\GameplaySFX_AM\GasButton_SFX		29234
+

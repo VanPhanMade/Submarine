@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2641024368",
+    "Type": "User",
+    "GUID": "{5DD1C379-1CE9-4F8E-BC3F-1B76EAA526CD}",
+    "Language": "SFX",
+    "Hash": "{8311F4F5-A514-1DD7-06C8-39EA46A749B8}",
+    "ObjectPath": "\\SoundBanks\\SFX\\SFX_Soundbank",
+    "ShortName": "SFX_Soundbank",
+    "Path": "SFX_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "707887850",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Vehicle_Car_Button_01.wav",
+      "CachePath": "BB/{BBFD153E-AAA2-62DC-4B8A-FE00571A2A61}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1594486876",
+      "Name": "GasButtonClick",
+      "ObjectPath": "\\Events\\SFX\\GasButtonClick",
+      "GUID": "{89F09B75-334C-4831-A237-C4BA51B63DC7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30352083",
+      "DurationMax": "0.30352083",
+      "MediaRefs": [
+       {
+        "Id": "707887850"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{581B915D-D6C2-C07F-8B7A-CED78689D785}"
+ }
+}

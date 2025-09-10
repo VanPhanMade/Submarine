@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DF8A4AD6-4B2D-40C5-AE8D-50D2BD1AF289}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="EnvironmentalSFX" ID="{DF8A4AD6-4B2D-40C5-AE8D-50D2BD1AF289}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="EnvirontmentalSFX_AM" ID="{31D57734-9E8D-4940-B7C3-5103186EE629}" ShortID="151027347">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E99079CC-3BE4-444E-8C31-1C6367BFCE55}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B85A9DCF-2E3A-448D-B7F1-8C6BC1ABEA5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="HullThud_SFX" ID="{5FAD3475-E2C7-480A-B205-C49A7F355FFC}" ShortID="638334335">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>65</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1000</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E99079CC-3BE4-444E-8C31-1C6367BFCE55}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B85A9DCF-2E3A-448D-B7F1-8C6BC1ABEA5B}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{D3A33D9D-1CAA-4B13-ADF0-07EDC2CB6C7E}" WorkUnitID="{B85A9DCF-2E3A-448D-B7F1-8C6BC1ABEA5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{16D27B31-9271-45AF-A0E6-9FE7D2682EA0}">
+									<Language>SFX</Language>
+									<AudioFile>Vehicle_Car_Trunk_Close_Impact.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="829905245"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{16D27B31-9271-45AF-A0E6-9FE7D2682EA0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

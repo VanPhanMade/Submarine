@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BFA20880-15F1-40C4-805A-662E67983D64}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="SFX" ID="{BFA20880-15F1-40C4-805A-662E67983D64}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SFX_Soundbank" ID="{5DD1C379-1CE9-4F8E-BC3F-1B76EAA526CD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="GasButtonClick" ID="{89F09B75-334C-4831-A237-C4BA51B63DC7}" WorkUnitID="{E88107F7-2CE1-4FC6-BAF3-B30233F13CD8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
