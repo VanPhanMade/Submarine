@@ -8,12 +8,12 @@
 > - C#: LINQ, .NET, Multi-Threading
 > - CI/CD Testing
 
-# Submarine Thing
+# Submarine Game
 
-A submarine simulator
+A submarine simulator, where you're goal is to balance operations in the control room. 
 
 ### Key Features
-- You’re in a submarine  
+- You’re in a submarine, utilizes ML-Agents pipeline for fish simulation.  
 - Built with **Unity 6000.0.53f1**  
 - Demonstrates modern Unity tech stack (URP, Burst, DOTS, etc.)  
 
