@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class DebrisButton : MonoBehaviour
 {
+    // Wwise Variables
+    [SerializeField] private AK.Wwise.Event ClearEvent;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +19,7 @@ public class DebrisButton : MonoBehaviour
 
     public void Clicked()
     {
+        ClearEvent.Post(gameObject);
         Destroy(gameObject);
     }
 }

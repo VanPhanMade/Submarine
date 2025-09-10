@@ -2824,7 +2824,7 @@ MonoBehaviour:
   FailEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7f978eb3343800940b06cd82f3e3ae99, type: 2}
   statusTextMesh: {fileID: 538386304}
   passcodeTextMesh: {fileID: 292219636}
 --- !u!1 &204019574
@@ -7995,7 +7995,7 @@ Transform:
   m_GameObject: {fileID: 667848821}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23753253, y: -0.66621244, z: -0.2424439, w: 0.66404843}
-  m_LocalPosition: {x: 0.49800003, y: 0.12449999, z: 1.7631}
+  m_LocalPosition: {x: 0.498, y: 0.124, z: 1.763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8057,6 +8057,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6647c6b664ed846b02eabee1c4488b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b6ab5c3617d4d0b42a67c88c0ca5aa2a, type: 2}
   TriggerChange:
     m_PersistentCalls:
       m_Calls:
@@ -8954,6 +8958,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6647c6b664ed846b02eabee1c4488b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   TriggerChange:
     m_PersistentCalls:
       m_Calls:
@@ -15083,6 +15091,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6647c6b664ed846b02eabee1c4488b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 36cbc946948951641af533b84fb3b97a, type: 2}
   TriggerChange:
     m_PersistentCalls:
       m_Calls:
@@ -18177,6 +18189,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6647c6b664ed846b02eabee1c4488b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f124d0f0177cfc44cb5e2d3cf9d12a66, type: 2}
   TriggerChange:
     m_PersistentCalls:
       m_Calls:
@@ -20747,6 +20763,14 @@ MonoBehaviour:
   submarineHealthUI: {fileID: 1527451526}
   timeRemainingText: {fileID: 1280477902}
   blackScreen: {fileID: 1404608593}
+  backgroundHum:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 966452a6ef2fcc44da2ff786a5182e11, type: 2}
+  hitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9093a477c9b12e047af91f76077aa471, type: 2}
 --- !u!4 &2018006052
 Transform:
   m_ObjectHideFlags: 0

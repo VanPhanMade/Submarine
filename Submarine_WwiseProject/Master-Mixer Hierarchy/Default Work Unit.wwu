@@ -9,6 +9,47 @@
 							<ObjectRef Name="System" ID="{1895AD4E-CF73-4289-82B2-7804C10D2FC0}" WorkUnitID="{2654D9EF-8515-4A13-95E2-0774AAD307BE}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{E933FE48-AC4C-4137-9F2A-55FA7E3A0B70}"/>
+						<Bus Name="AUX" ID="{76794EB9-D50E-4883-9367-93CBEDADE121}">
+							<ChildrenList>
+								<AuxBus Name="REVERB" ID="{F9781168-A73E-4E72-A586-0BBBBB20C852}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{956F2B04-F564-437A-82D0-B1C646798F00}" ShortID="470068723">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="LIGHTREVERB" ID="{CAC062D6-0DEA-47C8-927A-C05BE9185E1F}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{E907B65F-0C8D-4730-823F-640CE17476E4}" ShortID="486566005">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

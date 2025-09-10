@@ -3,7 +3,9 @@ using UnityEngine.Events;
 
 public class ButtonMeterController : MonoBehaviour, IInteractable
 {
-    
+    // Wwise Variables
+    [SerializeField] private AK.Wwise.Event ClickEvent;
+
     public UnityEvent TriggerChange;
     bool canInteract = true;
     Animator animator;
@@ -25,6 +27,7 @@ public class ButtonMeterController : MonoBehaviour, IInteractable
         }
         TriggerChange?.Invoke();
         animator?.Play("Activated", -1, 0);
+        ClickEvent.Post(gameObject);
         canInteract = false;
         cooldown.Start();
         

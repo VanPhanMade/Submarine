@@ -1,10 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
+	311404229	UpPressureEvent			\Default Work Unit\UpPressureEvent	
 	601285521	NumButtonEvent			\Default Work Unit\NumButtonEvent	
+	769801192	DownPressureEvent			\Default Work Unit\DownPressureEvent	
+	1088868132	GasButtonClickEvent			\Default Work Unit\GasButtonClickEvent	
+	1092895697	BackgroundHum			\Default Work Unit\BackgroundHum	
+	1738879109	HullThudEvent			\Default Work Unit\HullThudEvent	
 	2655784316	NumButtonSuccessEvent			\Default Work Unit\NumButtonSuccessEvent	
 	3428046505	NumButtonFailEvent			\Default Work Unit\NumButtonFailEvent	
+	3429849535	ClearDebrisEvent			\Default Work Unit\ClearDebrisEvent	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	146164747	NumButtonSuccess	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\27\{277C9F67-8041-8583-1A32-C08D69906500}.wem		\Actor-Mixer Hierarchy\Default Work Unit\NumButtonSuccess		88296
+	246098378	DownPressure	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\42\{42771740-4998-788C-FAEE-E78AED8E34E0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DownPressure		88296
+	254378668	UpPressure	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\C3\{C38C3B41-2A20-B01E-E15A-13BCB52AC7A4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpPressure		88296
 	343449606	NumButtonFail	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\64\{6403A897-34A7-1FCA-B190-37F882DA8647}.wem		\Actor-Mixer Hierarchy\Default Work Unit\NumButtonFail		88296
+	368384327	HullThud	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\0B\{0B372914-1E5F-F6D6-FACB-D31F8284AEF6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HullThud		59480
 	683710039	NumButton	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\53\{5318315D-6211-85FD-D6D5-C647E9F82072}.wem		\Actor-Mixer Hierarchy\Default Work Unit\NumButton		352896
+	739700653	GasButtonClick	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\F2\{F263191F-939E-319C-E260-3BABA4572CA0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\GasButtonClick		19148
+	1067661418	EnvironmentHum	C:\Users\tjl20\Documents\Git Hub\Sub\Submarine\Submarine_WwiseProject\.cache\50\{50E8333F-4919-6066-0F38-6CB013C5F622}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvironmentHum		352896
 

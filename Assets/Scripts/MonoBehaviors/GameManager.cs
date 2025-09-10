@@ -1,3 +1,5 @@
+
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,16 +35,39 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI timeRemainingText;
     [SerializeField] GameObject blackScreen;
 
+    // Wwise Variables
+    [SerializeField] private AK.Wwise.Event backgroundHum;
+
+    private float hitTime;
+    [SerializeField] private AK.Wwise.Event hitEvent;
+    private bool subHit;
+
     private void Start()
     {
         timeRemaining = maxTime;
+
+        // Audio Variables
+        hitTime = UnityEngine.Random.value * maxTime;
+        Debug.Log(hitTime);
+        subHit = false;
+
+        backgroundHum.Post(gameObject);
     }
 
     public void Update()
     {
-        if(timeRemaining > 0 && submarineHealth > 0)
+        if (timeRemaining > 0 && submarineHealth > 0)
             timeRemaining -= Time.deltaTime;
         timeRemainingText.text = CreateTimeText();
+
+        // Environment Audio
+        if (!subHit && timeRemaining < hitTime)
+        {
+            hitEvent.Post(gameObject);
+            subHit = true;
+        }
+            
+
         if (timeRemaining <= 0)
             Victory();
             
@@ -61,6 +86,7 @@ public class GameManager : MonoBehaviour
     {
         submarineHealth -= damage;
         submarineHealthUI.value = submarineHealth / submarineMaxHealth;
+
         if(submarineHealth <= 0)
         {
             blackScreen.SetActive(true);

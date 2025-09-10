@@ -70,6 +70,63 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="HullThud" ID="{4AA113FB-55E6-4492-92CB-5E1593D380DA}" ShortID="872891321">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>65</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1110</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="REVERB" ID="{F9781168-A73E-4E72-A586-0BBBBB20C852}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{60261078-9315-468C-87A3-D27917530003}">
+							<Language>SFX</Language>
+							<AudioFile>Vehicle_Car_Trunk_Close_Impact.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="368384327"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{60261078-9315-468C-87A3-D27917530003}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GasButtonClick" ID="{8A5C536B-7FF4-4C4A-8D0C-96F6CB6434AD}" ShortID="203630547">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{07148145-0652-46E8-8E33-BE6FDC343B92}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="75"/>
+											<Property Name="Min" Type="Real64" Value="-75"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
@@ -78,6 +135,155 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Vehicle_Car_Button_02" ID="{4196B6C6-6B6A-4E3C-A256-AD2BFE1F010E}">
+							<Language>SFX</Language>
+							<AudioFile>Vehicle_Car_Button_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="739700653"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Vehicle_Car_Button_02" ID="{4196B6C6-6B6A-4E3C-A256-AD2BFE1F010E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnvironmentHum" ID="{5A78F918-5B73-4DC6-B698-792DF9F54152}" ShortID="342333504">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BackgroundHum" ID="{45CE1AFE-DC3F-4636-98E2-4DF145F8B58E}">
+							<Language>SFX</Language>
+							<AudioFile>BackgroundHum.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1067661418"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BackgroundHum" ID="{45CE1AFE-DC3F-4636-98E2-4DF145F8B58E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="UpPressure" ID="{9E0842C3-5E77-4FDE-B82F-B84BFF552223}" ShortID="899789895">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="UpPreassure_02" ID="{2E0658F8-5D26-43AB-88FD-C123E0DB74B2}">
+							<Language>SFX</Language>
+							<AudioFile>UpPreassure_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="254378668"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="UpPreassure_02" ID="{2E0658F8-5D26-43AB-88FD-C123E0DB74B2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="DownPressure" ID="{01C51AFE-0807-4141-AE93-0BD0899BD27B}" ShortID="207517507">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DownPreassure" ID="{0F799693-96AB-4306-B64D-906F0EF5370A}">
+							<Language>SFX</Language>
+							<AudioFile>DownPreassure.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="383529704"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="DownPreassure_02" ID="{B07875BE-60CA-43ED-BAFD-55F28236C975}">
+							<Language>SFX</Language>
+							<AudioFile>DownPreassure_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="246098378"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DownPreassure_02" ID="{B07875BE-60CA-43ED-BAFD-55F28236C975}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ClearDebris" ID="{0B0857B9-516F-48DD-9B51-91841CA912C9}" ShortID="402568739">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>56</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-2110</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3597618D-9534-4C9E-8E9E-FAFA717C9E29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="LIGHTREVERB" ID="{CAC062D6-0DEA-47C8-927A-C05BE9185E1F}" WorkUnitID="{30F20456-15DE-4AA9-947A-CEE1FE628F11}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{9BF56B9B-89A8-4858-B3F1-CBAE80CB2375}">
+							<Language>SFX</Language>
+							<AudioFile>Vehicle_Car_Trunk_Close_Impact.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="368384327"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Vehicle_Car_Trunk_Close_Impact" ID="{9BF56B9B-89A8-4858-B3F1-CBAE80CB2375}" Platform="Linked"/>
+					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
 		</WorkUnit>

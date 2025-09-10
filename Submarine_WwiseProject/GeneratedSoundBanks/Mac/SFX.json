@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}",
     "Language": "SFX",
-    "Hash": "{A7DC4D84-F66F-5D38-42C5-D2C5ED5C7B8B}",
+    "Hash": "{AC3E539F-C339-7585-7F84-DE97D8919213}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
     "ShortName": "SFX",
     "Path": "SFX.bnk",
@@ -24,6 +24,22 @@
       "CachePath": "27/{277C9F67-8041-8583-1A32-C08D69906500}.wem"
      },
      {
+      "Id": "246098378",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DownPreassure_02.wav",
+      "CachePath": "42/{42771740-4998-788C-FAEE-E78AED8E34E0}.wem"
+     },
+     {
+      "Id": "254378668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UpPreassure_02.wav",
+      "CachePath": "C3/{C38C3B41-2A20-B01E-E15A-13BCB52AC7A4}.wem"
+     },
+     {
       "Id": "343449606",
       "Language": "SFX",
       "Streaming": "false",
@@ -32,15 +48,123 @@
       "CachePath": "64/{6403A897-34A7-1FCA-B190-37F882DA8647}.wem"
      },
      {
+      "Id": "368384327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Vehicle_Car_Trunk_Close_Impact.wav",
+      "CachePath": "0B/{0B372914-1E5F-F6D6-FACB-D31F8284AEF6}.wem"
+     },
+     {
       "Id": "683710039",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ButtonPress.wav",
       "CachePath": "53/{5318315D-6211-85FD-D6D5-C647E9F82072}.wem"
+     },
+     {
+      "Id": "739700653",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Vehicle_Car_Button_02.wav",
+      "CachePath": "F2/{F263191F-939E-319C-E260-3BABA4572CA0}.wem"
+     },
+     {
+      "Id": "1067661418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BackgroundHum.wav",
+      "CachePath": "50/{50E8333F-4919-6066-0F38-6CB013C5F622}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "1092895697",
+      "Name": "BackgroundHum",
+      "ObjectPath": "\\Events\\Default Work Unit\\BackgroundHum",
+      "GUID": "{D2015771-74C2-47F9-88E0-48C105460069}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1067661418"
+       }
+      ]
+     },
+     {
+      "Id": "3429849535",
+      "Name": "ClearDebrisEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\ClearDebrisEvent",
+      "GUID": "{FD3AB30C-FB6B-4ED3-A3FB-D7FD7CF3E8B7}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0927112",
+      "DurationMax": "2.0927112",
+      "MediaRefs": [
+       {
+        "Id": "368384327"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3485751979",
+        "Name": "LIGHTREVERB",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AUX\\LIGHTREVERB",
+        "GUID": "{CAC062D6-0DEA-47C8-927A-C05BE9185E1F}"
+       }
+      ]
+     },
+     {
+      "Id": "769801192",
+      "Name": "DownPressureEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\DownPressureEvent",
+      "GUID": "{B127493B-F300-4901-80C5-F2A4EDC769FC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "246098378"
+       }
+      ]
+     },
+     {
+      "Id": "1088868132",
+      "Name": "GasButtonClickEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\GasButtonClickEvent",
+      "GUID": "{FDC585CB-7055-4227-8C72-6D76E9EB4890}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.19004436",
+      "DurationMax": "0.20724481",
+      "MediaRefs": [
+       {
+        "Id": "739700653"
+       }
+      ]
+     },
+     {
+      "Id": "1738879109",
+      "Name": "HullThudEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\HullThudEvent",
+      "GUID": "{1080E047-37F3-43CF-B3EB-F469D0509EE5}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1744944",
+      "DurationMax": "1.1744944",
+      "MediaRefs": [
+       {
+        "Id": "368384327"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "REVERB",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AUX\\REVERB",
+        "GUID": "{F9781168-A73E-4E72-A586-0BBBBB20C852}"
+       }
+      ]
+     },
      {
       "Id": "601285521",
       "Name": "NumButtonEvent",
@@ -82,10 +206,24 @@
         "Id": "146164747"
        }
       ]
+     },
+     {
+      "Id": "311404229",
+      "Name": "UpPressureEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\UpPressureEvent",
+      "GUID": "{DBDEAAA7-DBDD-4DD8-BFB4-2C3F0B74A072}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "254378668"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{A4CC2231-2018-6CC7-D1E4-533E598D0BDE}"
+  "FileHash": "{C0AD1D30-045A-7C99-8517-D88122293F0B}"
  }
 }

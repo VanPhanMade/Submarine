@@ -36,6 +36,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HullThudEvent" ID="{1080E047-37F3-43CF-B3EB-F469D0509EE5}">
+					<ChildrenList>
+						<Action Name="" ID="{D054DEFA-2FA2-4D05-8D83-4BC5DFE41011}" ShortID="319495645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HullThud" ID="{4AA113FB-55E6-4492-92CB-5E1593D380DA}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GasButtonClickEvent" ID="{FDC585CB-7055-4227-8C72-6D76E9EB4890}">
+					<ChildrenList>
+						<Action Name="" ID="{FB958B15-1A15-4520-84B4-435B7BEA301E}" ShortID="108946027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GasButtonClick" ID="{8A5C536B-7FF4-4C4A-8D0C-96F6CB6434AD}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BackgroundHum" ID="{D2015771-74C2-47F9-88E0-48C105460069}">
+					<ChildrenList>
+						<Action Name="" ID="{117DC872-4D60-49A3-B9C3-9CC67D3D44A1}" ShortID="166436292">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnvironmentHum" ID="{5A78F918-5B73-4DC6-B698-792DF9F54152}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DownPressureEvent" ID="{B127493B-F300-4901-80C5-F2A4EDC769FC}">
+					<ChildrenList>
+						<Action Name="" ID="{CB0A77C7-9661-4C3D-85DD-1C63E687AE26}" ShortID="662426991">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DownPressure" ID="{01C51AFE-0807-4141-AE93-0BD0899BD27B}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UpPressureEvent" ID="{DBDEAAA7-DBDD-4DD8-BFB4-2C3F0B74A072}">
+					<ChildrenList>
+						<Action Name="" ID="{9112571A-3E8D-4190-9617-453A7954CF27}" ShortID="45134816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UpPressure" ID="{9E0842C3-5E77-4FDE-B82F-B84BFF552223}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ClearDebrisEvent" ID="{FD3AB30C-FB6B-4ED3-A3FB-D7FD7CF3E8B7}">
+					<ChildrenList>
+						<Action Name="" ID="{FFAC79CE-7B13-422B-B1C5-8A049309B99E}" ShortID="431245525">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClearDebris" ID="{0B0857B9-516F-48DD-9B51-91841CA912C9}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

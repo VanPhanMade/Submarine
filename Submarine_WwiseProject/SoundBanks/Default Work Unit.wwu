@@ -5,9 +5,15 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{54D850ED-CC72-481E-80E9-60BC0C4DF8DE}">
 					<ObjectInclusionList>
+						<ObjectRef Name="NumButtonSuccessEvent" ID="{EFC8F6A8-F4E2-4086-AC57-8FE35414E65E}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="NumButtonEvent" ID="{D0CF1B0B-4381-40E2-9F41-C8E176DDFDD6}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="NumButtonSuccess" ID="{7D6375B1-DAEB-47C4-8B2D-08DA40680F83}" WorkUnitID="{1D7EBF15-D3B8-4B88-A181-6D9FD878DA76}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GasButtonClickEvent" ID="{FDC585CB-7055-4227-8C72-6D76E9EB4890}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="HullThudEvent" ID="{1080E047-37F3-43CF-B3EB-F469D0509EE5}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BackgroundHum" ID="{D2015771-74C2-47F9-88E0-48C105460069}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="NumButtonFailEvent" ID="{E3606E67-16DC-482E-B250-2CC9BA619B89}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DownPressureEvent" ID="{B127493B-F300-4901-80C5-F2A4EDC769FC}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UpPressureEvent" ID="{DBDEAAA7-DBDD-4DD8-BFB4-2C3F0B74A072}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ClearDebrisEvent" ID="{FD3AB30C-FB6B-4ED3-A3FB-D7FD7CF3E8B7}" WorkUnitID="{6244F8F1-D0FF-4AE2-AD3B-90FFF453F909}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

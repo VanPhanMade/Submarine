@@ -145,3 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11962dd0e8402894f93f641f0cd90b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 59c69b7334a09604483fd1040fd4757f, type: 2}
