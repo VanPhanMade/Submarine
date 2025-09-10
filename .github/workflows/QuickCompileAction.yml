@@ -1,0 +1,47 @@
+name: QuickCompileWorkflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  script-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Debug
+        run: echo "✅ Script compile job started"
+
+      - name: Unity Compile Check (dry run)
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: .
+          targetPlatform: StandaloneLinux64
+          buildMethod: ""     # no build method = just check compilation
+
+  # --------------------------------------------------------------------
+  # build-compile:
+  #   runs-on: ubuntu-latest
+  #   needs: script-compile
+  #   env:
+  #     UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  #     UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  #     UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Unity Build Check
+  #       uses: game-ci/unity-builder@v4
+  #       with:
+  #         targetPlatform: StandaloneLinux64
+  #         buildMethod: ""
+  #
+  # NOTE:
+  # This requires a valid Unity license (Pro/Enterprise or properly
+  # activated Personal license with UNITY_LICENSE secret). Uncomment
+  # once you are ready to run full builds in CI.
+  # --------------------------------------------------------------------

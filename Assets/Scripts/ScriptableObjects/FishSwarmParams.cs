@@ -26,4 +26,8 @@ public class FishSwarmParams : ScriptableObject
     [Tooltip("How strongly the fish can steer when adjusting course.")]
     [Range(0.1f, 10f)]
     public float maxSteerForce = 3f;
+
+    [Tooltip("How quickly the fish rotates toward its velocity direction.")]
+    [Range(0.1f, 20f)]
+    public float rotationSpeed = 5f;
 }
